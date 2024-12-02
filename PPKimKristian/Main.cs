@@ -13,12 +13,18 @@ public class Main
 
         };
 
-        void ShowMovies()
+    }
+    public void ShowMovies()
+    {
+        for (int i = 0; i < movies.Count; i++)
         {
-            for (int i = 0; i < movies.Count; i++)
-            {
-                Console.WriteLine(movies[i].Title + movies[i].ReleaseYear + movies[i].Description + movies[i].Genre);
-            }
+            //Console.WriteLine(movies[i].Title + movies[i].ReleaseYear + movies[i].Description + movies[i].Genre);
+            //Console.WriteLine($"Title: {movies[i].Title} Year: {movies[i].ReleaseYear} Description: {movies[i].Description} Genre: {movies[i].Genre}");
+            Console.WriteLine($"{i + 1} Title: {movies[i].Title}");
         }
+
+        int input = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(movies[input - 1].Title);
     }
 }
