@@ -3,4 +3,4 @@
 using PPKimKristian;
 
 var prog = new Main();
-prog.ShowMovies();
+prog.MenuSwitch();
