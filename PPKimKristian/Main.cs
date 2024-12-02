@@ -103,7 +103,16 @@ public class Main
          Director = Console.ReadLine();
 
         movies.Add(new Movie(Title, ReleaseYear, Description, Genre, Director));
-        
+
+        Console.WriteLine();
+        Console.WriteLine($"Title: {movies.Last().Title}");
+        Console.WriteLine($"Year: {movies.Last().ReleaseYear}");
+        Console.WriteLine($"Description: {movies.Last().Description}");
+        Console.WriteLine($"Genre: {movies.Last().Genre}");
+        Console.WriteLine($"Director: {movies.Last().Director}");
+        Console.WriteLine();
+
+
         Console.WriteLine();
         Console.WriteLine("Do you want to do something else? Y/N");
         var userInput = Console.ReadLine();
